@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato:ital,wght@1,900&family=Poppins:wght@400;700&family=Raleway:wght@500&family=Source+Code+Pro:wght@300&family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato:ital,wght@1,900&family=Poppins:wght@400;700&family=Raleway:wght@500&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap');
+
+body{
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 1px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* ************************** */
+.container{
+    min-height: 66.8vh;
+    background-color: black;
+    color: white;
+    font-family: 'Verela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 6px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.bottom{
+    position: static;
+    height: 110px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+    height: 435px;
+    overflow: scroll;
+}
+
+.songItemContainer::-webkit-scrollbar{
+    width: .001rem;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 40px;
+    height: 45px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.bottom{
+    position: sticky;
+}
+
+@media(max-width: 775px) {
+
+    body{
+       width: 420px;
+    }
+
+ .songItem{
+    height: 45px;
+    font-size: 3vw;
+    font-weight: 700;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.icons{
+    margin-top: 19px;
+}
+
+.songItem img{
+    width: 40px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+
+div #masterSongName {
+    width: 85px; 
+    /* border: 1px solid #000000; */
+  }
+
+#masterSongName{
+     display: flex;
+     letter-spacing: 1px;
+     color: green;
+}
+
+.songInfo img{
+    width: 32px;
+}
+
+.container{
+    
+    background-image: url(background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+    
+  }
+
